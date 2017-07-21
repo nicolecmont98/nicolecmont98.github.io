@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Minneapolis Map </title>
+<style>
+div{
+  font-family: arial;
+}
+.container {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+.container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width:25%;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+    width:25%;
+}
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+.dropdown-content {
+    display: none;
+    position: static;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 26px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+body {
+  background-color: grey;
+}
+h1   {
+  color: white;
+}
+p    {
+  color: white;
+}
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.white{
+  color: white;
+}
+</style>
+</head>
+
+
+
+
+<body>
+  <div align="center" id = "myDiv">
+
+
+    <h1>Minneapolis</h1>
+    <p> </p>
+    <hr>
+  </div>
+<br/>
+
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="https://americaninfrastructuremag.com/wp-content/uploads/2016/09/4.jpg" style="width:100%">
+    <div class="text">Minneapolis Skyline</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="https://www.fehrwaytours.com/wp-content/uploads/2013/05/dreamstime_s_143904971-800x300.jpg" style="width:100%">
+    <div class="text">Twins Stadium</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="http://m5.paperblog.com/i/53/533431/minnehaha-great-first-time-homebuyer-minneapo-L-CbyLJb.jpeg" style="width:100%">
+    <div class="text">nature attraction in Minneapolis</div>
+  </div>
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+<br/>
+  <script>
+  var slideIndex = 0;
+  showSlides();
+  function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex> slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
+  }
+  </script>
+
+
+
+  <div class="container">
+    <a href="#home">Home</a>
+
+
+    <div class="dropdown">
+      <button class="dropbtn">Landmarks</button>
+      <div class="dropdown-content">
+        <a href="https://lucy54.github.io/Page%20Buildings.html">Buildings</a>
+        <a href="https://lucy54.github.io/Page%20Museums.html">Museums</a>
+        <a href="https://lucy54.github.io/Page%20Parks.html">Parks</a>
+        <a href="https://lucy54.github.io/Page%20Nature.html">Nature</a>
+      </div>
+    </div>
+
+
+
+    <div class="dropdown">
+      <button class="dropbtn">Attractions</button>
+      <div class="dropdown-content">
+        <a href="https://lucy54.github.io/Page%20Shopping.html">Shopping</a>
+        <a href="https://lucy54.github.io/Page%20Dining.html">Dining</a>
+        <a href="https://lucy54.github.io/Page%20Music%20and%20Theater.html">Music and Theater</a>
+        <a href="https://lucy54.github.io/Page%20Recreation.html">Recreation</a>
+      </div>
+    </div>
+
+
+    <div class="dropdown">
+      <button class="dropbtn">Building Information</button>
+      <div class="dropdown-content">
+        <a href="https://lucy54.github.io/nicole%20Skyline.html">Building Info</a>
+      </div>
+    </div>
+  </div>
+<br/>
+<div class="white">
+  Welcome to our website!
+</div>
+<br/>
+
+
+  <div id="map" style="width:100%;height:400px;background:yellow"></div>
+
+  <script>
+  function myMap() {
+    var mapOptions = {
+      center: new google.maps.LatLng (44.9762,-93.2686),
+      zoom: 10,
+      mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    myMarkers(map);
+    }
+  function myMarkers(inputmap) {
+      var foshay ={lat: 44.9746, lng: -93.2720};
+      var contentFoshay=
+        '<div id="content"<p>Foshay Tower</p></div>';
+      var infowindow1 = new google.maps.InfoWindow({
+              content: contentFoshay
+            });
+      var marker1 = new google.maps.Marker({
+        position: foshay,
+        map:inputmap,
+        title: 'Foshay Tower'
+      });
+      marker1.addListener('click', function() {
+        infowindow1.open(inputmap,marker1);
+      });
+      var contentWalker=
+        '<div id="content2"<p>Walker Art Museum</p></div>';
+      var infowindow2 = new google.maps.InfoWindow({
+              content: contentWalker
+            });
+     var walker ={lat: 44.9685, lng: -93.2892};
+     var marker2 = new google.maps.Marker({
+         position: walker,
+         map:inputmap,
+         title: 'Walker Art'
+       });
+     marker2.addListener('click', function() {
+        infowindow2.open(inputmap,marker2);
+         });
+      var contentUSBank=
+           '<div id="content3"<p>US Bank Stadium</p></div>';
+      var infowindow3 = new google.maps.InfoWindow({
+                 content: contentUSBank
+               });
+      var USBank ={lat: 44.986656, lng: -93.258133};
+      var marker3 = new google.maps.Marker({
+            position: USBank,
+            map:inputmap,
+            title: 'US Bank Stadium'
+          });
+      marker3.addListener('click', function() {
+           infowindow3.open(inputmap,marker3);
+            });
+      var contentIDSTower=
+           '<div id="content4"<p>IDS Tower</p></div>';
+      var infowindow4 = new google.maps.InfoWindow({
+                 content: contentIDSTower
+               });
+      var IDSTower ={lat: 44.9761, lng: -93.2719};
+      var marker4 = new google.maps.Marker({
+            position: IDSTower,
+            map:inputmap,
+            title: 'IDS Tower'
+          });
+      marker4.addListener('click', function() {
+           infowindow4.open(inputmap,marker4);
+            });
+      var contentCapella=
+           '<div id="content5"<p>Capella Building</p></div>';
+      var infowindow5 = new google.maps.InfoWindow({
+                 content: contentCapella
+               });
+      var Capella ={lat: 44.9762, lng: -93.2686};
+      var marker5 = new google.maps.Marker({
+            position: Capella,
+            map:inputmap,
+            title: 'Capella Building'
+          });
+      marker5.addListener('click', function() {
+           infowindow5.open(inputmap,marker5);
+            });
+  }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxuPVMoWTFdHgiayy_hGmZn0sqSz2En48&callback=myMap"></script>
+
+
+
+  </body>
+  </html>

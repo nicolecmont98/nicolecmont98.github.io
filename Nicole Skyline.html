@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Minneapolis Skyline Building Information</title>
+</head>
+
+
+<style>
+.container {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+.container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width:33%;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+    width:32%;
+}
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+.dropdown-content {
+    display: none;
+    position: static;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 26px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+body {
+  background-color: grey;
+}
+body { font-family: arial;
+	color:rgb(0,0,0);
+}
+.button1 {
+    background-color:rgb(162,160,139);
+    color: red;
+    border: 1px solid #111111;
+    width: 200px;
+}
+.button1:hover {
+    background-color: #555555;
+    color: white;
+}
+.button2 {
+    background-color:rgb(162,160,139);
+    color: red;
+    border: 1px solid #111111;
+    width: 200px;
+}
+.button2:hover {
+    background-color: #555555;
+    color: white;
+}.button3 {
+    background-color:rgb(162,160,139);
+    color: red;
+    border: 1px solid #111111;
+    width: 200px;
+}
+.button3:hover {
+    background-color: #555555;
+    color: white;
+}.button4 {
+    background-color:rgb(162,160,139);
+    color: red;
+    border: 1px solid #111111;
+    width: 200px;
+}
+.button4:hover {
+    background-color: #555555;
+    color: white;
+}
+ul.a {
+    list-style-type: circle;
+}
+h3 {
+    border-bottom: 6px solid red;
+}
+h1   {
+  color: white;
+}
+</style>
+<br/>
+
+
+<body>
+<div align="center" id = "myDiv">
+
+
+    <h1>Minneapolis</h1>
+    <p> </p>
+    <hr>
+  </div>
+
+<div class="container">
+    <a href="https://lucy54.github.io/MINNEAPOLIS%20Interactive%20Site.html">Home</a>
+
+
+    <div class="dropdown">
+      <button class="dropbtn">Landmarks</button>
+      <div class="dropdown-content">
+        <a href="https://lucy54.github.io/Page%20Buildings.html">Buildings</a>
+        <a href="https://lucy54.github.io/Page%20Museums.html">Museums</a>
+        <a href="https://lucy54.github.io/Page%20Parks.html">Parks</a>
+        <a href="https://lucy54.github.io/Page%20Nature.html">Nature</a>
+      </div>
+    </div>
+
+
+
+    <div class="dropdown">
+      <button class="dropbtn">Attractions</button>
+      <div class="dropdown-content">
+        <a href="https://lucy54.github.io/Page%20Shopping.html">Shopping</a>
+        <a href="https://lucy54.github.io/Page%20Dining.html">Dining</a>
+        <a href="https://lucy54.github.io/Page%20Music%20and%20Theater.html">Music and Theater</a>
+        <a href="https://lucy54.github.io/Page%20Recreation.html">Recreation</a>
+      </div>
+    </div>
+
+
+
+</div>
+
+<br>
+
+
+<div id="everything" align="center">
+	<img src="https://s-media-cache-ak0.pinimg.com/originals/77/88/be/7788beb26a421bdc16f1a4db2c2dc356.jpg" alt="Mnneapolis Skyline"
+	style="width:500px;height:200px;">
+
+<br/>
+<br/>
+<br/>
+
+
+<div id="buttonDiv" style="width:200px ; display: inline-block;">
+<button class="button button1" onclick="showTower('foshayDiv')">Foshay</button>
+<br/>
+<br/>
+<button class="button button2" onclick="showTower('capellaDiv')">Capella</button>
+<br/>
+<br/>
+<button class="button button3" onclick="showTower('idsDiv')">IDS</button>
+<br/>
+<br/>
+<button class="button button4"onclick="showTower('usbankDiv')">US Bank Stadium</button>
+</div>
+
+<div id="contentTowerDiv" style="display: inline-block;">
+<div id="foshayDiv" style="display: inline-block;">
+
+	<div id="imgDiv" style="display: inline-block;">
+	<img src="http://www.citiesarchitecture.com/LegacyImages/F/FoshayTower-001.jpg" alt="Foshay Tower"
+	style="width:100px;height:125px;">
+	</div>
+	<div id="content" style="display: inline-block;">
+	<h3>FOSHAY</h3>
+	<ul class="a">
+	  <li>32 floors</li>
+	  <li>447 ft.</li>
+	  <li>made in 1929</li>
+	</ul>
+
+	</div>
+</div>
+
+<div id="capellaDiv" style="display: none">
+	<div id="imgDiv" style="display: inline-block;">
+	  <img src="https://www.peacecoffee.com/_uls/resources/capella_towers_resized.jpg" alt="Capella Tower"
+	style="width:100px;height:125px;">
+	</div>
+	<div id="content" style="display: inline-block;">
+	<h3>CAPELLA</h3>
+    <ul class="a">
+      <li>56 floors</li>
+      <li>775 ft</li>
+      <li>made in 1992</li>
+    </ul>
+  </div>
+
+</div>
+
+<div id="idsDiv" style="display: none">
+	<div id="imgDiv" style="display: inline-block;">
+	<img src="http://ids-center.com/wp-content/uploads/general1.jpg" alt="ISD Tower"
+	style="width:125px;height:125px;">
+	</div>
+	<div id="content" style="display: inline-block;">
+	<h3>ISD TOWER</h3>
+	<ul class="a">
+      <li>55 floors</li>
+      <li>792 ft</li>
+      <li>made in 1973</li>
+    </ul>
+
+	</div>
+</div>
+
+<div id="usbankDiv" style="display: none">
+	<div id="imgDiv" style="display: inline-block;">
+	<img src="http://www.estadiodeportes.mx/wp-content/uploads/2016/05/tempBerg-160301-6811-nfl_mezz_1280_1024.jpg" alt="US Bank Stadium"
+	style="width:150px;height:125px;">
+	</div>
+	<div id="content" style="display: inline-block;">
+	<h3>US BANK STADIUM</h3>
+	<ul class="a">
+      <li>2018 Super Bowl will be held here</li>
+      <li>used to be called the "Metrodome"</li>
+      <li>made in 2016</li>
+    </ul>
+     </div>
+
+</div>
+
+
+</div>
+
+
+<script type="text/javascript">
+	function showTower(show){
+		document.getElementById('capellaDiv').style.display='none';
+		document.getElementById('idsDiv').style.display='none';
+		document.getElementById('usbankDiv').style.display='none';
+		document.getElementById('foshayDiv').style.display='none';
+		document.getElementById(show).style.display='inline-block';
+	}
+	</script>
+	</div>
+</body>
+</html>

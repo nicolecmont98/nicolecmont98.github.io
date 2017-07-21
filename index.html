@@ -1,164 +1,146 @@
-
 <!DOCTYPE html>
-
 <html>
-
 <head>
-
-<title>Nicole Montero</title>
-
-</head>
-
-<script>
-
-function validateForm() {
-
-    var x = document.forms["myForm"]["fname"].value;
-
-    if (x == "") {
-
-        alert("Must fill in name");
-
-        return false;
-
-</script>
-
-
-
-<script>
-
-document.write(Date());
-
-</script>
-
-
-
 <style>
-
-h1 {
-
-    text-align: center;
-
+.button {
+  padding: 13px 23px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 7px #999;
 }
 
-h3 {
+.button:hover {background-color: #3e8e41}
 
-    text-align: center;
-
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
-
-a {
-
-    color: hotpink;
-
-}
-
-ul.a {
-
-    list-style-type: circle;
-
-}
-
-
-
 </style>
-
-
-
+</head>
 <body>
 
-  <form name="myForm" action="/action_page_post.php"
-
-onsubmit="return validateForm()" method="post">
-
-age: <input type="text" name="fname">
-
-<input type="submit" value="Submit">
-
-</form>
-
-
-
-<h1 style="background-color:pink">
-
-Nicole Montero
-
-</h1>
-
-
-
-  <img src="http://wximpact40-88.pbworks.com/f/Minneapolis_skyline_daytime_2.jpg" alt="skyline of minneapolis" style="width:304px;height:228px;">
-
-<div class="center"
-
-<p>I'm 18 years old. I'm going to school at MCTC and I'm majoring in <del>Accounting</del> Computer Science. I Live in Minneapolis. I like adventuring new places, rock collecting, and grafitti.  <img src="smiley.gif" alt="Smiley face" style="float:center;width:22px;height:22px;"></p>
-
-</div>
-
-<p id="demo">Educational Journey</p>
-
-
-
-<button type="button" onclick='document.getElementById("demo").innerHTML = "I went to 3 different highschools, and I graduation from Minneapolis public schools. I finally decided to stand my ground and follow thorough with computer science as my major. My dream is to be a U of M student. Hopefully Ill be able to get a paid internship in the soon future."'>Click Me!</button>
-
-
-
-
-
-<h3 style="background-color:pink">
-
-Likes
-
-</h3>
-
-  <ul class="a">
-
-    <li>Coffee</li>
-
-    <li>Mexican Food</li>
-
-    <li>Pineapple on Pizza</li>
-
-    <li>nature walks</li>
-
-  </ul>
-
-<h3 style="background-color:pink">
-
-Dislikes</h3>
-
-  <ul class="a">
-
-    <li>Energy Drinks</li>
-
-    <li>Majority Candy(stomach aches)</li>
-
-    <li>Frozen Pizza</li>
-
-    <li>Egg Plant</li>
-
-  </ul>
-
-
-
-<h3 style="background-color:pink">
-
-Favorite Websites</h3>
-
-  <ul class="a">
-
-    <li><a href="https://twitter.com/">Twitter</a></li>
-
-    <li><a href="http://www.bbc.com/">BBC</a></li>
-
-  </ul>
-
-<script type="text/javascript">
-
-alert("Welcome to my webpage!");
-
-</script>
+<button class="button">Welcome</button>
 
 </body>
+</html>
 
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {
+	width: 100%;
+	border: 1px solid gray;
+}
+header, footer {
+	padding: 1em;
+	color: white;
+	backround-color: black;
+	clear: left;
+	text-align: center;
+}
+nav {
+	float: left;
+	max-width: 160px;
+	margin: 0;
+	padding: 1em;
+}
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+nav ul a {
+	text-decoration: none;
+}
+article {
+	margin-left: 170px;
+	border-left: 1px solid gray;
+	padding: 1em;
+	overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1 style="color:powderblue;">Lucy</h1>
+</header>
+
+
+
+<img src="https://static.pexels.com/photos/132037/pexels-photo-132037.jpeg" alt="https://static.pexels.com/photos/132037/pexels-photo-132037.jpeg" width="245" height="230">
+
+<img src="https://images7.alphacoders.com/307/thumb-350-307389.jpg" alt="https://images7.alphacoders.com/307/thumb-350-307389.jpg" width="245" height="230">
+
+<img src="https://s-media-cache-ak0.pinimg.com/originals/31/3c/8c/313c8c242b479aa42a14c89256839e18.jpg" alt="https://s-media-cache-ak0.pinimg.com/originals/31/3c/8c/313c8c242b479aa42a14c89256839e18.jpg" width="245" height="230">
+
+<img src="https://thefashionblog104.files.wordpress.com/2015/11/bigstock-modern-building-28824551.jpg" alt="https://thefashionblog104.files.wordpress.com/2015/11/bigstock-modern-building-28824551.jpg" width="245" height="230">
+
+
+
+<nav>
+  <u1>
+    <li><a href="#">Bio</a></li>
+    <li><a href="#">Likes</a></li>
+    <li><a href="#">Dislikes</a></li>
+    <li><a href="#">Fun Fact</a></li>
+    <li><a href="#">Favorite Web Pages</a></li>
+  </ul>
+</nav>
+
+<article>
+  <h1>Bio</h1>
+  <p>_____. </p>
+
+  <h1>Likes</h1>
+  <p>ice cream, pizza, </p>
+
+  <h1>Dislikes</h1>
+  <p>____. </p>
+
+  <h1>Fun Fact</h1>
+  <p>_____. </p>
+
+  <h1>Links to my favorite Web pages</h1>
+  <p> <a href="Page Buildings.html">Buildings</a> </p>
+  <p> <a href="Page Museums.html">Museums</a> </p>
+  <p> <a href="Page Parks.html">Parks</a> </p>
+  <p> <a href="Page Nature.html">Nature</a> </p>
+  <p> <a href="Page Shopping.html">Shopping</a> </p>
+  <p> <a href="Page Dining.html">Dining</a> </p>
+  <p> <a href="Page Music and Theater.html">Music and Theater</a> </p>
+  <p> <a href="Page Recreation.html">Recreation</a> </p>
+  <p> <a href="nicole Skyline.html">Skyline</a> </p>
+
+
+
+
+
+<img src="https://st2.depositphotos.com/1502311/12020/v/450/depositphotos_120209232-stock-illustration-woman-profile-picture-vector.jpg.jpg" alt="https://st2.depositphotos.com/1502311/12020/v/450/depositphotos_120209232-stock-illustration-woman-profile-picture-vector.jpg" width="140" height="142">
+
+
+
+
+
+<p><font color="black">2017</font></p>
+
+</body>
 </html>
